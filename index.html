@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>2048!</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.js"></script>
+    <link rel="stylesheet" type="text/css" href="game_style.css">
+</head>
+<body onload="new_sesion();" style="background-image: url(sinij-kirpich.gif);">
+    <h1>2048!</h1>
+    <p id="score">Score = 0</p>
+	<table>
+		<tr>
+		    <td>
+                <div id = "canvas-block">
+                    <canvas id="canvas" width="600" height="600" align="center"  ></canvas>
+                </div>
+            </td>
+		    <td><div id="top" a ></div></td>
+		</tr>
+      </table>
+	<div id = "buttons">
+	    <input type="button" id="btn2" class="btn" value="Restart" onclick="restart()">
+        <input type="button" id="btn3" class="btn" value="Change player" onclick="location.reload()" >
+        <input type="button" id="btn3" class="btn" value="Table" onclick="showTable()" >
+    </div>
+    
+	<script src="game.js"></script>    
+</body>
+</html>
